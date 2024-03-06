@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StoreDev</title>
+    <link rel="stylesheet" href="css/app.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav
+      class="fixed shadow-md top-0 w-full bg-slate-900 flex justify-between p-5 items-center"
+    >
+      <h1 class="text-white text-3xl md:text-4xl">StoreDev</h1>
+      <div class="w-7 md:w-8">
+        <img
+          src="resources/carrito.svg"
+          class="hover:cursor-pointer"
+          alt="Icono Carrito"
+        />
+      </div>
+      <div
+        class="absolute top-16 md:top-20  h-screen right-0 w-full bg-slate-800 md:w-2/5"
+      >
+        <h1>Aqui sera ek carrito</h1>
+      </div>
+    </nav>
+
+    <header
+      class="mt-16 md:mt-20 flex items-center justify-center bg-header-bg bg-cover bg-no-repeat min-h-52 md:h-96"
+    >
+      <div>
+        <h2 class="text-gray-100 text-xl md:text-4xl">
+          Los mejores artículos para los
+          <span class="text-cyan-400">{devs}</span>
+        </h2>
+      </div>
+    </header>
+    <section class="py-5 bg-slate-100">
+      <div class="my-0 mx-auto w-11/12">
+        <h3 class="text-4xl font-medium">Camisetas</h3>
+        <p>
+          Conoce nuestros diseños únicos y originales que haran destacar tu
+          estilo
+        </p>
+        <div
+          class="mt-5 flex flex-col gap-5 md:flex-row md:flex-wrap md:justify-center lg:justify-start"
+        >
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 jus md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/camisas/camisa-01.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Code</p>
+              <p class="font-semibold text-lg">$129.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="1"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/camisas/camisa-02.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Hola Mundo</p>
+              <p class="font-semibold text-lg">$199.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="2"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/camisas/camisa-03.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">PHP</p>
+              <p class="font-semibold text-lg">$299.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="3"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/camisas/camisa-04.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Node Js</p>
+              <p class="font-semibold text-lg">$189.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="4"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/camisas/camisa-05.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Full Snack</p>
+              <p class="font-thin text-lg">$289.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="5"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/camisas/camisa-06.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Python</p>
+              <p class="font-thin text-lg">$119.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="6"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <main class="pb-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:h-96">
+        <div
+          class="bg-sticker-bg h-60 md:h-full md:w-50 md:col-start-1 md:col-end-3 bg-center bg-cover bg-no-repeat"
+        ></div>
+        <div class="md:flex md:justify-evenly md:flex-col px-3">
+          <h3 class="font-semibold text-4xl px-3 md:px-0">
+            Los mejores stickers solo en
+            <span class="text-cyan-400">{StoreDev}</span>
+          </h3>
+          <p class="mt-3 px-3 text-justify md:px-0 md:mt-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            est laudantium ipsam perspiciatis ab reprehenderit incidunt ut quas
+            eum adipisci facere delectus deleniti pariatur eligendi maiores non,
+            repudiandae suscipit eaque, Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repudiandae numquam suscipit, voluptatum, impedit
+            corporis totam alias officiis odit harum nobis fuga recusandae unde
+            accusamus beatae mollitia cupiditate? Dolores, nobis a.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div
+          class="flex flex-col my-0 mx-auto w-11/12 gap-5 md:flex-row md:flex-wrap md:justify-center lg:justify-start pt-3"
+        >
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 jus md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/sticker/sticker-01.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">HTML & CSS</p>
+              <p class="font-semibold text-lg">$20.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="7"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/sticker/sticker-02.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Cat Hacker</p>
+              <p class="font-semibold text-lg">$15.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="8"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/sticker/sticker-03.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Give Me a Br</p>
+              <p class="font-semibold text-lg">$20.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="9"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/sticker/sticker-04.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Loop While</p>
+              <p class="font-semibold text-lg">$15.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="10"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/sticker/sticker-05.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Cookies</p>
+              <p class="font-semibold text-lg">$20.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="11"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/sticker/sticker-06.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Code Till</p>
+              <p class="font-semibold text-lg">$10.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="12"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <section class="py-5 bg-slate-100">
+      <div class="my-0 mx-auto w-11/12">
+        <h3 class="text-4xl font-medium">Gorras</h3>
+        <p>
+          Las mejores gorras para cualquier desarrollador, son auténticas y
+          están a la moda
+        </p>
+        <div
+          class="mt-5 flex flex-col gap-5 md:flex-row md:flex-wrap md:justify-center lg:justify-start"
+        >
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 jus md:flex md:flex-col md:justify-between"
+          >
+            <div>
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/gorras/gorra-01.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Node Js Cap</p>
+              <p class="font-semibold text-lg">$99.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="13"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/gorras/gorra-02.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Coder Cap</p>
+              <p class="font-semibold text-lg">$199.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="14"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/gorras/gorra-03.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Interface Cap</p>
+              <p class="font-semibold text-lg">$299.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="15"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/gorras/gorra-04.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Js Cap</p>
+              <p class="font-semibold text-lg">$159.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="16"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/gorras/gorra-05.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Python Cap</p>
+              <p class="font-thin text-lg">$199.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="17"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+          <article
+            class="shadow-md p-3 rounded-md md:w-64 md:h-96 md:flex md:flex-col md:justify-between"
+          >
+            <div class="h-3/5">
+              <img
+                class="rounded-md h-full w-full object-cover"
+                src="resources/articulos/gorras/gorra-06.jpeg"
+                alt="Camisa"
+              />
+            </div>
+            <div>
+              <p class="font-thin text-lg">Computer Science Cap</p>
+              <p class="font-thin text-lg">$199.00</p>
+              <button
+                class="w-full mt-1 bg-slate-900 text-white p-2 text-center rounded-sm transition-all duration-300 ease-in-out hover:bg-slate-800"
+                data-id="18"
+              >
+                Agregar
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="my-0 h-auto mx-auto w-11/12">
+        <h3 class="text-4xl font-medium">Testimoniales</h3>
+        <p>Nuestros clientes nuncan mienten.</p>
+        <div class="grid md:grid-cols-4 gap-5 mt-5">
+          <article
+            class="shadow-md rounded-md flex md:items-center gap-5 items-center md:h-60 p-3 md:col-start-1 md:col-end-3"
+          >
+            <div>
+              <q class="font-mono text-sm text-justify"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                dolorem distinctio placeat! Quis non aperiam</q
+              >
+              <div class="flex gap-1 mt-5">
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="block text-right pt-5 text-cyan-600 font-semibold"
+                >{Omar Solís}
+              </span>
+            </div>
+          </article>
+          <article
+            class="shadow-md rounded-md flex flex-row-reverse p-3 gap-2 items-center md:col-start-3 md:col-end-4 md:flex-col md:justify-evenly"
+          >
+            <div>
+              <q class="font-mono text-sm text-justify"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                dolorem distinctio placeat! Quis non aperiam</q
+              >
+              <div class="flex gap-1 mt-5">
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="block text-right pt-5 text-cyan-600 font-semibold"
+                >{Omar Solís}
+              </span>
+            </div>
+          </article>
+          <article
+            class="shadow-md rounded-md flex flex-row-reverse p-3 gap-2 items-center md:col-start-4 md:col-end-5 md:row-start-2 md:row-end-3 md:flex-col md:justify-center"
+          >
+            <div>
+              <q class="font-mono text-sm text-justify"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                dolorem distinctio placeat! Quis non aperiam</q
+              >
+              <div class="flex gap-1 mt-5">
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="block text-right pt-5 text-cyan-600 font-semibold"
+                >{Omar Solís}
+              </span>
+            </div>
+          </article>
+          <article
+            class="shadow-md rounded-md flex p-3 gap-2 items-center md:h-60"
+          >
+            <div>
+              <q class="font-mono text-sm text-justify"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                dolorem distinctio placeat! Quis non aperiam</q
+              >
+              <div class="flex gap-1 mt-5">
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="block text-right pt-5 text-cyan-600 font-semibold"
+                >{Omar Solís}
+              </span>
+            </div>
+          </article>
+          <article
+            class="shadow-md rounded-md flex flex-row-reverse md:flex-row-reverse md:items-center gap-5 items-center md:h-60 p-3 md:col-start-1 md:col-end-3"
+          >
+            <div>
+              <q class="font-mono text-sm text-justify"
+                >Lorem ipsum, dolor sit dsfamet consectetur adipisicing elit.
+                Quia dolorem distinctio placeat! Quis non aperiam</q
+              >
+              <div class="flex gap-1 mt-5">
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="block text-right pt-5 text-cyan-600 font-semibold"
+                >{Omar Solís}
+              </span>
+            </div>
+          </article>
+          <article
+            class="shadow-md rounded-md flex p-3 gap-2 items-center md:h-60"
+          >
+            <div>
+              <q class="font-mono text-sm text-justify"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                dolorem distinctio placeat! Quis non aperiam</q
+              >
+              <div class="flex gap-1 mt-5">
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="block text-right pt-5 text-cyan-600 font-semibold"
+                >{Omar Solís}
+              </span>
+            </div>
+          </article>
+          <article
+            class="shadow-md rounded-md flex p-3 flex-row-reverse gap-2 items-center md:justify-center md:h-60 md:col-start-1 md:col-end-3"
+          >
+            <div>
+              <q class="font-mono text-sm text-left"
+                >Lorem ipsum, dolor sit amet csdonsectetur adipisicing elit.
+                Quia dolorem distinctio placeat! Quis non aperiam</q
+              >
+              <div class="flex gap-1 mt-5">
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="block text-right pt-5 text-cyan-600 font-semibold"
+                >{Omar Solís}
+              </span>
+            </div>
+          </article>
+          <article
+            class="shadow-md rounded-md flex p-3 flex-row-reverse gap-2 items-center md:justify-center md:h-60 md:col-start-3 md:col-end-5"
+          >
+            <div>
+              <q class="font-mono text-sm text-left"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                dolorem distinctio placeat! Quis non aperiam</q
+              >
+              <div class="flex gap-1 mt-5">
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-sm text-cyan-500">
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="block text-right pt-5 text-cyan-600 font-semibold"
+                >{Omar Solís}
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-slate-900 py-5">
+      <h3 class="text-white text-center md:text-xl">
+        &copy; Todos los derechos reservados - StoreDev
+      </h3>
+    </footer>
+  </body>
+</html>

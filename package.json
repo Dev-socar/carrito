@@ -1,0 +1,22 @@
+{
+  "name": "carrito-compras",
+  "version": "1.0.0",
+  "description": "Simulación de un carrito de compras usando HTML, Tailwind CSS y JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-socar/carrito.git"
+  },
+  "author": "Omar Fernando Solís Carvajal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-socar/carrito/issues"
+  },
+  "homepage": "https://github.com/Dev-socar/carrito#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
